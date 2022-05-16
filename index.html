@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>ToDoList</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="task"><a href="##" class="active">My Task</a></li>
+          <li class="progress"><a href="##">In Progress</a></li>
+          <li class="complete"><a href="##">Completed</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <button class="add_task"><span>+</span><span>Add Task</span></button>
+        <form class="display-none">
+          <div class="textCard">
+            <input type="checkbox" />
+            <input type="text" placeholder="Type Something Here" />
+            <div class="edit_button">
+              <a href="##" class="star">
+                <i class="fa-fw far fa-star"></i>
+              </a>
+              <a href="##" class="pen"><i class="fa-fw fas fa-pen editState"></i></a>
+            </div>
+            <div class="content_icon display-none">
+              <a href="##"><i class="fa-fw fas fa-calendar-alt"></i></a>
+              <a href="##"><i class="fa-fw far fa-file"></i></a>
+              <a href="##"><i class="fa-fw far fa-comment-dots"></i></a>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="deadline">
+              <div class="title">
+                <i class="fa-fw fas fa-calendar-alt"></i>
+                <span>Deadline</span>
+              </div>
+              <div class="content">
+                <input type="date" />
+                <input type="time" />
+              </div>
+            </div>
+            <div class="file">
+              <div class="title">
+                <i class="fa-fw far fa-file"></i>
+                <span>File</span>
+              </div>
+              <div class="content">
+                <button class="add_button">+</button>
+              </div>
+            </div>
+            <div class="comment">
+              <div class="title">
+                <i class="fa-fw far fa-comment-dots"></i>
+                <span>Comment</span>
+              </div>
+              <div class="content">
+                <textarea placeholder="meet him at Lorence"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="wrap_button">
+            <button class="cancel">x Cancel</button>
+            <button class="add_task_button">+ Add Task</button>
+          </div>
+        </form>
+        <div class="show_item"></div>
+      </div>
+    </main>
+    <script type="module" src="./JS/module/main.js"></script>
+    <footer></footer>
+  </body>
+</html>

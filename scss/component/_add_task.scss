@@ -1,0 +1,23 @@
+@use '../base/font';
+@use '../base/color';
+@use '../component/click_button';
+.add_task {
+    width: 620px;
+    background-color: #fff;
+    padding: 20px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: color.$add_button;
+    @include font.Roboto(font.$regular, 24px);
+    span {
+        display: inline-block;
+        &:first-child {
+            text-align: center;
+            width: 24px;
+        }
+        &:nth-child(2) {
+            padding: 0 16px;
+        }
+    }
+}

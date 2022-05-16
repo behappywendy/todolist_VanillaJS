@@ -1,0 +1,60 @@
+@use '../base/font';
+@use '../base/color';
+.wrap_button {
+    display: flex;
+    height: 60px;
+
+    button {
+        width: 50%;
+        @include font.Roboto(font.$regular, 24px);
+    }
+    .cancel {
+        color: color.$red;
+        background-color: #fff;
+        border: 0;
+        &:hover {
+            color: black;
+        }
+    }
+    .add_task_button {
+        background-color: color.$primary;
+        color: #fff;
+        border: 0;
+        &:hover {
+            color: black;
+        }
+    }
+
+    .save {
+        background-color: color.$primary;
+        color: #fff;
+        border: 0;
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+.show_item form {
+    margin-bottom: 8px;
+}
+
+.done {
+    text-decoration: line-through;
+    color: color.$done_color;
+}
+
+.textCard.click_star {
+    background-color: color.$click_start;
+}
+.star > .fas {
+    color: color.$star;
+}
+
+.editState {
+    color: color.$primary;
+}
+
+.click_CheckBox {
+    text-decoration: line-through;
+}

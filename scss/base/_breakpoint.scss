@@ -1,0 +1,9 @@
+$mobile: 576px;
+$pad: 768px;
+$pc: 992px;
+$pc_lg: 1200px;
+@mixin min_width($value) {
+    @media (min-width: $value) {
+        @content;
+    }
+}

@@ -1,0 +1,57 @@
+@use '../base/color.scss';
+@use '../base/font.scss';
+@use '../base/breakpoint.scss';
+@use '../component/add_list.scss';
+@use '../component/add_task.scss';
+
+.edit {
+    @include breakpoint.min_width(breakpoint.$mobile) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.list_input {
+    display: flex;
+    margin-bottom: 10px;
+    @include breakpoint.min_width(breakpoint.$mobile) {
+        margin-bottom: 0px;
+    }
+    input {
+        flex: 1 0 24px;
+        height: 24px;
+    }
+    label {
+        flex: 1 0 auto;
+        padding: 0px 16px;
+        width: 90%;
+        @extend %title;
+    }
+}
+.list_click {
+    display: flex;
+    i {
+        font-size: 24px;
+        &:first-child {
+            margin-right: 10px;
+            @include breakpoint.min_width(breakpoint.$mobile) {
+                margin-right: 32px;
+            }
+        }
+    }
+    a {
+        color: #000;
+        &:hover {
+            color: color.$primary;
+        }
+    }
+}
+.add_task {
+    margin-bottom: 24px;
+}
+.list_2 {
+    margin-top: 8px;
+}
+.list_input i,
+.list_input span {
+    color: color.$dark_gry;
+}

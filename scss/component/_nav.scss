@@ -1,0 +1,47 @@
+@use '../base/color.scss';
+@use '../base/font.scss';
+@use '../base/breakpoint.scss';
+nav {
+    font-size: 0;
+    @include breakpoint.min_width(breakpoint.$mobile) {
+        height: 76px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        @include breakpoint.min_width(breakpoint.$mobile) {
+            flex-direction: row;
+            justify-content: center;
+        }
+        li {
+            text-align: center;
+            @include breakpoint.min_width(breakpoint.$mobile) {
+                width: 220px;
+            }
+        }
+    }
+    a {
+        @include font.Roboto(font.$regular, 24px);
+        display: inline-block;
+        line-height: 71px;
+        width: 100%;
+        @include breakpoint.min_width(breakpoint.$mobile) {
+            width: 160px;
+        }
+        @include breakpoint.min_width(breakpoint.$mobile) {
+            flex-direction: row;
+        }
+        color: color.$dark_blue;
+        // &:hover {
+        //     @extend %title;
+        //     border-bottom: 5px solid color.$dark_blue;
+        //     color: #fff;
+        // }
+    }
+}
+
+.active {
+    @extend %title;
+    border-bottom: 5px solid color.$dark_blue;
+    color: #fff;
+}

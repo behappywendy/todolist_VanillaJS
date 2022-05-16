@@ -1,0 +1,56 @@
+@use '../base/color.scss';
+@use '../base/font.scss';
+@use '../base/breakpoint.scss';
+
+.add_content {
+    border-top: 1px solid color.$add_button;
+    padding: 24px 72px;
+
+    .title {
+        font-size: 0;
+        margin-bottom: 8px;
+        i {
+            display: inline-block;
+            width: 15px;
+            // height: 17.1px;
+            font-size: 17.1px;
+        }
+        span {
+            margin-left: 9px;
+            @extend %subtitle;
+        }
+    }
+    .content {
+        padding-left: 23px;
+    }
+}
+%margin_bottom {
+    margin-bottom: 22px;
+}
+.deadline {
+    @extend %margin_bottom;
+}
+.file {
+    @extend %margin_bottom;
+    .add_button {
+        width: 32px;
+        height: 32px;
+        font-size: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: color.$add_button;
+        color: #fff;
+        border: 0;
+    }
+}
+textarea {
+    width: 90%;
+    height: 120px;
+    border: 0;
+    resize: none;
+    padding: 8px;
+    @include breakpoint.min_width(breakpoint.$pc) {
+        width: 445px;
+    }
+}

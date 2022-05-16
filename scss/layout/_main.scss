@@ -1,0 +1,24 @@
+@use '../base/color.scss';
+@use '../base/font.scss';
+@use '../base/breakpoint.scss';
+@use '../component/list.scss';
+@use '../component/add_task';
+@use '../component/click_button';
+@use '../component/form';
+@use '../component/show_item';
+.container {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 22px;
+    form {
+        //     background-color: color.$content_background;
+        // display: none;
+    }
+    li {
+        padding: 24px 32px;
+        background-color: color.$content_background;
+    }
+}

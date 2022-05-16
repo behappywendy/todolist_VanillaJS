@@ -1,0 +1,13 @@
+@use './base/reset.scss';
+@use './base/color.scss';
+@use './layout/header.scss';
+@use './layout/main.scss';
+@use './layout/footer.scss';
+
+// * {
+//     outline: 1px solid red;
+// }
+body {
+    min-width: 320px;
+    background-color: color.$background;
+}

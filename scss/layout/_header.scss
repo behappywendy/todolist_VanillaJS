@@ -1,0 +1,6 @@
+@use '../base/color.scss';
+@use '../component/nav.scss';
+
+header {
+    background-color: color.$primary;
+}

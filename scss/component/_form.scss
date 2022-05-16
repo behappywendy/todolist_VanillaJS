@@ -1,0 +1,74 @@
+@use '../base/color';
+@use '../base/display';
+// .container > form {
+//     display: none;
+// }
+form {
+    input[type='checkbox'] {
+        width: 24px;
+        height: 24px;
+        margin-right: 20px;
+        appearance: none;
+        background-color: #fff;
+    }
+    input[type='checkbox']:checked {
+        background-color: #fa8072;
+    }
+
+    input[type='text'] {
+        width: 248px;
+        flex: 1;
+        margin-right: 20px;
+        border: 0;
+        outline: none;
+        font-size: 28px;
+        background: none;
+    }
+    i {
+        color: black;
+    }
+}
+
+//編輯
+.textCard {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px 32px 28px 32px;
+}
+.edit_button {
+    font-size: 24px;
+}
+
+.content_icon {
+    margin-top: 19px;
+    font-size: 16px;
+    flex: 0 1 80%;
+    padding: 0px 48px;
+    i,
+    span {
+        color: #757575;
+    }
+}
+.detail {
+    margin-top: 2px;
+    border-top: 2px;
+    background-color: #f2f2f2;
+    padding: 24px 72px 28px 72px;
+}
+
+.content {
+    padding: 0 23px;
+}
+
+//js
+.major {
+    color: color.$star;
+}
+.majorBackground {
+    background-color: #fff2dc;
+}
+
+.content_icon i {
+    display: contents;
+}

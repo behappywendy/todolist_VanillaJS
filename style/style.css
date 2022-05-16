@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list_input label, .active {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.add_content .title span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+nav {
+  font-size: 0;
+}
+@media (min-width: 576px) {
+  nav {
+    height: 76px;
+  }
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+nav ul li {
+  text-align: center;
+}
+@media (min-width: 576px) {
+  nav ul li {
+    width: 220px;
+  }
+}
+nav a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 71px;
+  width: 100%;
+  color: #00408b;
+}
+@media (min-width: 576px) {
+  nav a {
+    width: 160px;
+  }
+}
+@media (min-width: 576px) {
+  nav a {
+    flex-direction: row;
+  }
+}
+
+.active {
+  border-bottom: 5px solid #00408b;
+  color: #fff;
+}
+
+header {
+  background-color: #4a90e2;
+}
+
+.add_content {
+  border-top: 1px solid #c8c8c8;
+  padding: 24px 72px;
+}
+.add_content .title {
+  font-size: 0;
+  margin-bottom: 8px;
+}
+.add_content .title i {
+  display: inline-block;
+  width: 15px;
+  font-size: 17.1px;
+}
+.add_content .title span {
+  margin-left: 9px;
+}
+.add_content .content {
+  padding-left: 23px;
+}
+
+.file, .deadline {
+  margin-bottom: 22px;
+}
+
+.file .add_button {
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c8c8c8;
+  color: #fff;
+  border: 0;
+}
+
+textarea {
+  width: 90%;
+  height: 120px;
+  border: 0;
+  resize: none;
+  padding: 8px;
+}
+@media (min-width: 992px) {
+  textarea {
+    width: 445px;
+  }
+}
+
+.wrap_button {
+  display: flex;
+  height: 60px;
+}
+.wrap_button button {
+  width: 50%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.wrap_button .cancel {
+  color: #d0021b;
+  background-color: #fff;
+  border: 0;
+}
+.wrap_button .cancel:hover {
+  color: black;
+}
+.wrap_button .add_task_button {
+  background-color: #4a90e2;
+  color: #fff;
+  border: 0;
+}
+.wrap_button .add_task_button:hover {
+  color: black;
+}
+.wrap_button .save {
+  background-color: #4a90e2;
+  color: #fff;
+  border: 0;
+}
+.wrap_button .save:hover {
+  color: black;
+}
+
+.show_item form {
+  margin-bottom: 8px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #9b9b9b;
+}
+
+.textCard.click_star {
+  background-color: #fff2dc;
+}
+
+.star > .fas {
+  color: #f5a623;
+}
+
+.editState {
+  color: #4a90e2;
+}
+
+.click_CheckBox {
+  text-decoration: line-through;
+}
+
+.add_task {
+  width: 620px;
+  background-color: #fff;
+  padding: 20px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #c8c8c8;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.add_task span {
+  display: inline-block;
+}
+.add_task span:first-child {
+  text-align: center;
+  width: 24px;
+}
+.add_task span:nth-child(2) {
+  padding: 0 16px;
+}
+
+@media (min-width: 576px) {
+  .edit {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.list_input {
+  display: flex;
+  margin-bottom: 10px;
+}
+@media (min-width: 576px) {
+  .list_input {
+    margin-bottom: 0px;
+  }
+}
+.list_input input {
+  flex: 1 0 24px;
+  height: 24px;
+}
+.list_input label {
+  flex: 1 0 auto;
+  padding: 0px 16px;
+  width: 90%;
+}
+
+.list_click {
+  display: flex;
+}
+.list_click i {
+  font-size: 24px;
+}
+.list_click i:first-child {
+  margin-right: 10px;
+}
+@media (min-width: 576px) {
+  .list_click i:first-child {
+    margin-right: 32px;
+  }
+}
+.list_click a {
+  color: #000;
+}
+.list_click a:hover {
+  color: #4a90e2;
+}
+
+.add_task {
+  margin-bottom: 24px;
+}
+
+.list_2 {
+  margin-top: 8px;
+}
+
+.list_input i,
+.list_input span {
+  color: #757575;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+form input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  appearance: none;
+  background-color: #fff;
+}
+form input[type=checkbox]:checked {
+  background-color: #fa8072;
+}
+form input[type=text] {
+  width: 248px;
+  flex: 1;
+  margin-right: 20px;
+  border: 0;
+  outline: none;
+  font-size: 28px;
+  background: none;
+}
+form i {
+  color: black;
+}
+
+.textCard {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px 32px 28px 32px;
+}
+
+.edit_button {
+  font-size: 24px;
+}
+
+.content_icon {
+  margin-top: 19px;
+  font-size: 16px;
+  flex: 0 1 80%;
+  padding: 0px 48px;
+}
+.content_icon i,
+.content_icon span {
+  color: #757575;
+}
+
+.detail {
+  margin-top: 2px;
+  border-top: 2px;
+  background-color: #f2f2f2;
+  padding: 24px 72px 28px 72px;
+}
+
+.content {
+  padding: 0 23px;
+}
+
+.major {
+  color: #f5a623;
+}
+
+.majorBackground {
+  background-color: #fff2dc;
+}
+
+.content_icon i {
+  display: contents;
+}
+
+.show_item {
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+main {
+  padding: 22px;
+}
+main li {
+  padding: 24px 32px;
+  background-color: #f2f2f2;
+}
+
+body {
+  min-width: 320px;
+  background-color: #e1e1e1;
+}
+
+/*# sourceMappingURL=style.css.map */
